@@ -63,6 +63,15 @@ export default function Pricing() {
 
           return (
             <div key={key} className={`plan-card reveal ${plan.featured ? 'featured' : ''} ${plan.enterprise ? 'enterprise' : ''}`} ref={addToRefs}>
+              {plan.featured && (
+                <div className="plan-pick-ribbon">
+                  <div className="plan-pick-glow"></div>
+                  <div className="plan-pick-text">
+                    <span className="plan-pick-star">★</span>
+                    MERCION PICK
+                  </div>
+                </div>
+              )}
               <div className="plan-top-line"></div>
               <h3 className="plan-name">{plan.name}</h3>
               <div className="plan-price-wrap">
@@ -96,7 +105,7 @@ export default function Pricing() {
               {plan.enterprise ? (
                 <a href="#contact" className="plan-cta plan-cta-enterprise">Contact Us →</a>
               ) : (
-                <a href="#contact" className="plan-cta">Select Plan</a>
+                <a href="#contact" className="plan-cta">{plan.featured ? 'Get Started →' : 'Select Plan'}</a>
               )}
             </div>
           );

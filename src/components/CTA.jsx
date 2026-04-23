@@ -27,7 +27,7 @@ export default function CTA() {
   };
 
   return (
-    <section className="cta-section" id="contact">
+    <section className="cta-section" id="cta">
       <div className="cta-bg"></div>
       <div className="cta-grid-bg"></div>
       <div className="cta-content reveal" ref={addToRefs}>

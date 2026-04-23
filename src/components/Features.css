@@ -106,5 +106,13 @@
 @media (max-width: 600px) {
   .features-header { gap: 24px; }
   .feature-card { padding: 28px 20px; }
-  .feature-num { font-size: 56px; margin-bottom: 16px; }
+  .feature-num { font-size: 48px; margin-bottom: 16px; }
+  .feature-title { font-size: 18px; }
+  .feature-desc { font-size: 14px; }
+}
+@media (max-width: 480px) {
+  .features { padding: 80px 20px; }
+  .feature-card { padding: 24px 16px; }
+  .feature-num { font-size: 40px; }
+  .feature-icon { font-size: 22px; }
 }

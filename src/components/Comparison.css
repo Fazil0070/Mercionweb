@@ -83,12 +83,29 @@
 .compare-pillar-dot { width: 8px; height: 8px; background: var(--red); border-radius: 50%; flex-shrink: 0; box-shadow: 0 0 10px var(--red-glow); }
 .compare-pillar-text { font-family: var(--font-mono); font-size: 11px; font-weight: 600; letter-spacing: 2px; text-transform: uppercase; color: var(--text-secondary); }
 
-@media (max-width: 900px) {
+@media (max-width: 1100px) {
   .compare-table th, .compare-table td { padding: 16px; font-size: 13px; }
-  .compare-banner { flex-direction: column; align-items: flex-start; }
+}
+@media (max-width: 900px) {
+  .compare-table-wrap { overflow-x: auto; -webkit-overflow-scrolling: touch; }
+  .compare-table { min-width: 900px; }
+  .compare-table th, .compare-table td { padding: 14px; font-size: 13px; }
+  .compare-banner { flex-direction: column; align-items: flex-start; gap: 20px; padding: 28px; }
+  .compare-pillars { gap: 16px; }
+  .compare-pillar-text { font-size: 10px; }
+  .comparison { padding: 80px 24px; }
 }
 @media (max-width: 600px) {
   .compare-table th, .compare-table td { padding: 12px; font-size: 12px; }
-  .compare-banner { padding: 24px; }
+  .compare-banner { padding: 24px 20px; }
+  .compare-banner-text strong { font-size: 16px; }
+  .compare-banner-text { font-size: 14px; }
   .comparison-bg-text { display: none; }
+  .compare-pillars { flex-wrap: wrap; }
+}
+@media (max-width: 480px) {
+  .comparison { padding: 80px 16px; }
+  .compare-banner { padding: 20px 16px; }
+  .compare-pillar { gap: 6px; }
+  .compare-pillar-dot { width: 6px; height: 6px; }
 }

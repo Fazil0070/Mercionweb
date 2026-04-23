@@ -136,7 +136,7 @@ export default function Comparison() {
         </div>
         <div className="compare-pillars">
           <div className="compare-pillar"><div className="compare-pillar-dot"></div><span className="compare-pillar-text">Most Affordable</span></div>
-          <div className="compare-pillar"><div className="compare-pillar-dot"></div><span class="compare-pillar-text">99.9% Uptime</span></div>
+          <div className="compare-pillar"><div className="compare-pillar-dot"></div><span className="compare-pillar-text">99.9% Uptime</span></div>
           <div className="compare-pillar"><div className="compare-pillar-dot"></div><span className="compare-pillar-text">Enterprise Security</span></div>
           <div className="compare-pillar"><div className="compare-pillar-dot"></div><span className="compare-pillar-text">Zero Hidden Fees</span></div>
         </div>

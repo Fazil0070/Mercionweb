@@ -52,6 +52,7 @@
   .why-grid { grid-template-columns: 1fr; gap: 40px; }
   .why-visual { height: 400px; margin: 20px; }
   .why-stat-card { padding: 20px; }
+  .why { padding: 80px 24px; }
 }
 @media (max-width: 600px) {
   .why-visual { height: 320px; margin: 16px 0; }
@@ -61,4 +62,14 @@
   .uptime-num { font-size: clamp(48px, 15vw, 64px); }
   .why-point { flex-direction: column; gap: 12px; padding: 24px 0; }
   .why-point:hover { padding-left: 0; }
+  .why-point-title { font-size: 16px; }
+  .why-point-desc { font-size: 14px; }
+  .why-stat-num { font-size: 28px; }
+  .why-stat-label { font-size: 10px; }
+}
+@media (max-width: 480px) {
+  .why { padding: 80px 20px; }
+  .why-visual { height: 280px; }
+  .uptime-num { font-size: 42px; }
+  .why-stat-card { transform: scale(0.85); padding: 12px; }
 }
