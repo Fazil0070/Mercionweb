@@ -5,9 +5,9 @@ export default function Footer() {
     <footer>
       <div className="footer-grid">
         <div>
-          <a href="#" style={{display: 'flex', alignItems: 'center', gap: '12px', marginBottom: '24px', textDecoration: 'none'}}>
+          <a href="#" style={{display: 'flex', alignItems: 'center', gap: '8px', marginBottom: '24px', textDecoration: 'none'}}>
             <img src="/mercionen.png" alt="Mercion Logo" style={{height: '48px', width: 'auto', borderRadius: '4px'}} />
-            <span style={{fontFamily: 'var(--font-orbitron)', fontSize: '28px', fontWeight: '700', letterSpacing: '4px', color: 'var(--white)', textTransform: 'uppercase', display: 'inline-block', marginLeft: '8px'}}>MERCION</span>
+            <span style={{fontFamily: 'var(--font-exo2)', fontSize: '28px', fontWeight: '700', letterSpacing: '2px', color: 'var(--white)', textTransform: 'uppercase', display: 'inline-block', lineHeight: '1'}}>MERCION</span>
           </a>
           <div className="footer-tagline">Built for Performance. Designed for Trust.</div>
           <p className="footer-desc">

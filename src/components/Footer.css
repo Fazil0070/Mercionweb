@@ -9,12 +9,12 @@ footer {
   gap: 80px; 
   margin-bottom: 80px; 
 }
-.footer-brand-name { 
-  font-family: var(--font-display); 
-  font-size: 36px; 
-  letter-spacing: 4px; 
-  color: #F0F0F0; 
-  margin-bottom: 12px; 
+.footer-brand-name {
+  font-family: var(--font-exo2);
+  font-size: 36px;
+  letter-spacing: 2px;
+  color: #F0F0F0;
+  margin-bottom: 12px;
   display: flex;
   align-items: center;
 }
