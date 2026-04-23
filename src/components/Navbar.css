@@ -1,0 +1,90 @@
+.navbar {
+  position: fixed;
+  top: 0; left: 0; right: 0;
+  z-index: 100;
+  padding: 0 48px;
+  height: 80px;
+  display: flex; align-items: center; justify-content: space-between;
+  border-bottom: 1px solid transparent;
+  background: transparent;
+  transition: all 0.3s ease;
+}
+
+.navbar.scrolled {
+  background: rgba(3, 3, 3, 0.85);
+  backdrop-filter: blur(20px);
+  -webkit-backdrop-filter: blur(20px);
+  border-bottom: 1px solid var(--border);
+  height: 70px;
+}
+
+.nav-logo {
+  display: flex; align-items: center; gap: 12px;
+  text-decoration: none;
+}
+
+.nav-brand-img {
+  height: 56px; /* Increased size as requested */
+  width: auto;
+  object-fit: contain;
+  transition: transform 0.3s ease;
+  border-radius: 4px;
+}
+.nav-brand-img:hover {
+  transform: scale(1.05);
+}
+
+.nav-brand-text {
+  font-family: var(--font-orbitron);
+  font-size: 28px;
+  font-weight: 700;
+  letter-spacing: 4px;
+  color: var(--white);
+  text-transform: uppercase;
+  margin-left: 12px;
+  display: inline-block;
+}
+
+.nav-links { display: flex; align-items: center; gap: 40px; list-style: none; }
+.nav-links a {
+  font-family: var(--font-heading); font-size: 13px; font-weight: 600;
+  letter-spacing: 2px; text-transform: uppercase; color: var(--text-secondary);
+  text-decoration: none; transition: color 0.2s; cursor: none;
+  position: relative;
+}
+.nav-links a:not(.nav-cta)::after {
+  content: '';
+  position: absolute;
+  width: 0;
+  height: 2px;
+  bottom: -4px;
+  left: 0;
+  background-color: var(--red);
+  transition: width 0.3s ease;
+}
+.nav-links a:not(.nav-cta):hover::after {
+  width: 100%;
+}
+.nav-links a:hover { color: var(--white); }
+
+.nav-cta {
+  color: var(--white) !important; 
+  border: 1px solid var(--red);
+  padding: 10px 24px; 
+  font-size: 12px !important; 
+  font-weight: 700 !important;
+  border-radius: 4px;
+  transition: all 0.3s ease !important;
+}
+.nav-cta:hover { 
+  background: var(--red) !important; 
+  color: #000 !important; 
+  box-shadow: 0 0 15px var(--red-glow);
+}
+
+@media (max-width: 900px) {
+  .navbar { padding: 0 24px; height: 70px; }
+  .navbar.scrolled { height: 64px; }
+  .nav-links { display: none; }
+  .nav-brand-img { height: 48px; }
+}
