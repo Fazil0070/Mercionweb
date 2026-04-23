@@ -46,7 +46,6 @@ body {
   font-family: var(--font-body);
   font-weight: 400;
   overflow-x: hidden;
-  cursor: none;
   /* For custom cursor */
 }
 
@@ -131,7 +130,6 @@ body:has(button:hover) .cursor-ring {
   background: var(--red);
   border: none;
   padding: 16px 40px;
-  cursor: none;
   text-decoration: none;
   display: inline-block;
   position: relative;
@@ -175,7 +173,6 @@ body:has(button:hover) .cursor-ring {
   backdrop-filter: blur(10px);
   border: 1px solid var(--border2);
   padding: 16px 40px;
-  cursor: none;
   text-decoration: none;
   display: inline-block;
   transition: all 0.3s ease;

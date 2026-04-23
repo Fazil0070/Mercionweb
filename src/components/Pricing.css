@@ -29,7 +29,7 @@
 .toggle-switch {
   position: relative; width: 60px; height: 30px;
   background: var(--border2); border: 2px solid var(--border2);
-  border-radius: 15px; cursor: none; transition: all 0.3s ease;
+  border-radius: 15px; transition: all 0.3s ease;
 }
 .toggle-switch.on { border-color: var(--red); background: rgba(230,0,0,0.1); }
 .toggle-thumb {
@@ -70,7 +70,7 @@
 .plan-features { list-style: none; margin-bottom: 40px; }
 .plan-features li { font-size: 15px; color: var(--text-secondary); padding: 12px 0; border-bottom: 1px solid var(--border); display: flex; align-items: center; gap: 12px; }
 .plan-features li::before { content: ''; width: 8px; height: 2px; background: var(--red); flex-shrink: 0; }
-.plan-cta { display: block; font-family: var(--font-heading); font-size: 13px; font-weight: 700; letter-spacing: 2.5px; text-transform: uppercase; text-align: center; text-decoration: none; padding: 16px; border: 1px solid var(--border2); color: var(--text-secondary); transition: all 0.3s ease; cursor: none; }
+.plan-cta { display: block; font-family: var(--font-heading); font-size: 13px; font-weight: 700; letter-spacing: 2.5px; text-transform: uppercase; text-align: center; text-decoration: none; padding: 16px; border: 1px solid var(--border2); color: var(--text-secondary); transition: all 0.3s ease; }
 .plan-card.featured .plan-cta { background: var(--red); border-color: var(--red); color: #000; }
 .plan-cta:hover { border-color: var(--red); color: var(--white); background: rgba(230,0,0,0.1); }
 .plan-card.featured .plan-cta:hover { background: var(--red-bright); box-shadow: 0 0 20px var(--red-glow); }

@@ -1,5 +1,4 @@
 import React from 'react';
-import CustomCursor from './components/CustomCursor';
 import Navbar from './components/Navbar';
 import Hero from './components/Hero';
 import Ticker from './components/Ticker';
@@ -15,7 +14,6 @@ import Footer from './components/Footer';
 function App() {
   return (
     <>
-      <CustomCursor />
       <Navbar />
       <main>
         <Hero />

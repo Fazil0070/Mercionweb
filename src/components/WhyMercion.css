@@ -40,7 +40,7 @@
 .why-stat-label { font-family: var(--font-heading); font-size: 12px; font-weight: 600; letter-spacing: 1.5px; text-transform: uppercase; color: var(--text-dim); margin-top: 8px; }
 
 .why-points { display: flex; flex-direction: column; gap: 0; }
-.why-point { padding: 32px 0; border-bottom: 1px solid var(--border); display: flex; gap: 24px; align-items: flex-start; cursor: none; transition: padding-left 0.4s ease, background 0.4s ease; }
+.why-point { padding: 32px 0; border-bottom: 1px solid var(--border); display: flex; gap: 24px; align-items: flex-start; transition: padding-left 0.4s ease, background 0.4s ease; }
 .why-point > div { flex: 1; min-width: 0; }
 .why-point:hover { padding-left: 16px; background: rgba(255,255,255,0.02); }
 .why-point-num { font-family: var(--font-mono); font-size: 12px; font-weight: 600; color: var(--red); letter-spacing: 2px; flex-shrink: 0; margin-top: 4px; }
