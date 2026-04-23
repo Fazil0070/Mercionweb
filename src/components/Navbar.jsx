@@ -26,6 +26,23 @@ export default function Navbar() {
 
   const closeMenu = () => setMenuOpen(false);
 
+  const handleNavClick = (e, href) => {
+    if (href.startsWith('#')) {
+      e.preventDefault();
+      const targetId = href.substring(1);
+      const elem = document.getElementById(targetId);
+      if (elem) {
+        elem.scrollIntoView({ behavior: 'smooth' });
+        window.history.pushState(null, '', href);
+      }
+    } else if (href === '/' && location.pathname === '/') {
+      e.preventDefault();
+      window.scrollTo({ top: 0, behavior: 'smooth' });
+      window.history.pushState(null, '', '/');
+    }
+    closeMenu();
+  };
+
   const isHomePage = location.pathname === '/';
 
   const navLinks = isHomePage ? [
@@ -41,16 +58,16 @@ export default function Navbar() {
   return (
     <>
       <nav className={`navbar ${scrolled ? 'scrolled' : ''}`}>
-        <Link to="/" className="nav-logo" onClick={closeMenu}>
+        <Link to="/" className="nav-logo" onClick={(e) => handleNavClick(e, '/')}>
           <img src="/mercionen.png" alt="Mercion Logo" className="nav-brand-img" />
           <span className="nav-brand-text">MERCION</span>
         </Link>
 
         <ul className="nav-links">
           {navLinks.map(link => (
-            <li key={link.href}><Link to={link.href} onClick={closeMenu}>{link.label}</Link></li>
+            <li key={link.href}><Link to={link.href} onClick={(e) => handleNavClick(e, link.href)}>{link.label}</Link></li>
           ))}
-          <li><Link to="/contact" className="nav-link-auth">Contact Us</Link></li>
+          <li><Link to={isHomePage ? "#contact" : "/contact"} className="nav-link-auth" onClick={(e) => isHomePage ? handleNavClick(e, '#contact') : undefined}>Contact Us</Link></li>
           <li><Link to="/signin" className="nav-cta">Sign In</Link></li>
           <li><Link to="/signup" className="nav-link-auth nav-link-auth-primary">Sign Up</Link></li>
         </ul>
@@ -73,14 +90,14 @@ export default function Navbar() {
           <ul className="nav-overlay-links">
             {navLinks.map((link, i) => (
               <li key={link.href} style={{ animationDelay: `${i * 60}ms` }}>
-                <Link to={link.href} onClick={closeMenu}>
+                <Link to={link.href} onClick={(e) => handleNavClick(e, link.href)}>
                   <span className="nav-overlay-num">0{i + 1}</span>
                   {link.label}
                 </Link>
               </li>
             ))}
             <li style={{ animationDelay: `${navLinks.length * 60}ms` }}>
-              <Link to="/contact" onClick={closeMenu}>
+              <Link to={isHomePage ? "#contact" : "/contact"} onClick={(e) => isHomePage ? handleNavClick(e, '#contact') : closeMenu()}>
                 <span className="nav-overlay-num">0{navLinks.length + 1}</span>
                 Contact
               </Link>
