@@ -34,8 +34,8 @@ export default function About() {
           <circle cx="12" cy="7" r="4" />
         </svg>
       ),
-      title: "Freelancers",
-      desc: "Launch client projects fast without burning through your budget. Reliable hosting that keeps your portfolio and client sites running smoothly."
+      title: "Startups",
+      desc: "Launch your venture with hosting that scales with your growth. Fast infrastructure, transparent pricing, and support that understands your journey."
     },
     {
       icon: (
@@ -44,8 +44,8 @@ export default function About() {
           <polyline points="9 22 9 12 15 12 15 22" />
         </svg>
       ),
-      title: "Small Businesses",
-      desc: "Get online with professional-grade hosting at prices that make sense. No hidden fees, no renewal shocks — just dependable infrastructure."
+      title: "Entrepreneurs",
+      desc: "Turn your ideas into reality with reliable hosting. From MVP to scale, we provide the infrastructure you need to build and grow your business."
     },
     {
       icon: (
@@ -54,8 +54,8 @@ export default function About() {
           <path d="M6 12v5c0 1.66 4 3 9 3s9-1.34 9-3v-5" />
         </svg>
       ),
-      title: "Students & Devs",
-      desc: "Test your ideas and deploy class projects without worrying about costs. Low-cost hosting that scales when your idea takes off."
+      title: "Freelancers",
+      desc: "Launch client projects fast without burning through your budget. Reliable hosting that keeps your portfolio and client sites running smoothly."
     },
     {
       icon: (
