@@ -66,12 +66,12 @@ export default function Process() {
   }, [steps.length]);
 
   useEffect(() => {
-    const newParticles = Array.from({ length: 20 }, (_, i) => ({
+    const newParticles = Array.from({ length: 8 }, (_, i) => ({
       id: i,
       x: Math.random() * 100,
       y: Math.random() * 100,
-      size: Math.random() * 3 + 1,
-      speed: Math.random() * 2 + 1,
+      size: Math.random() * 2 + 1,
+      speed: Math.random() * 2 + 2,
       delay: Math.random() * 2
     }));
     setParticles(newParticles);
@@ -80,19 +80,6 @@ export default function Process() {
   return (
     <section className="process" id="process">
       <div className="process-bg-text">FLOW</div>
-      <div className="process-data-stream">
-        {[...Array(8)].map((_, i) => (
-          <div
-            key={i}
-            className="data-column"
-            style={{
-              left: `${10 + i * 12}%`,
-              animationDelay: `${i * 0.3}s`,
-              animationDuration: `${2 + Math.random() * 2}s`
-            }}
-          />
-        ))}
-      </div>
       <div className="process-particles">
         {particles.map(p => (
           <div
@@ -119,7 +106,7 @@ export default function Process() {
           <span style={{ color: 'var(--red)' }}>4 STEPS.</span>
         </h2>
         <p className="section-desc process-desc">
-          Launch your website in minutes with our streamlined onboarding process. 
+          Launch your website in minutes with our streamlined onboarding process.
           No technical expertise required.
         </p>
       </div>
