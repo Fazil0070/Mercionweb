@@ -11,34 +11,21 @@ export default function Footer() {
           </a>
           <div className="footer-tagline">Built for Performance. Designed for Trust.</div>
           <p className="footer-desc">
-            Enterprise cloud hosting built for Indian businesses. Fast, secure, automated, and priced for growth. More affordable and more reliable than the competition.
+            Enterprise cloud hosting built for Indian businesses. Fast, secure, automated, and priced for growth.
           </p>
         </div>
         <div>
           <div className="footer-col-title">Hosting</div>
           <ul className="footer-links">
-            <li><a href="#">Shared Hosting</a></li>
-            <li><a href="#">VPS Hosting</a></li>
-            <li><a href="#">Dedicated Servers</a></li>
-            <li><a href="#">WordPress Hosting</a></li>
+            <li><a href="#pricing">High Performance Hosting</a></li>
+            <li><a href="#pricing">WordPress Hosting</a></li>
           </ul>
         </div>
         <div>
           <div className="footer-col-title">Company</div>
           <ul className="footer-links">
-            <li><a href="#">About Us</a></li>
-            <li><a href="#">Blog</a></li>
-            <li><a href="#">Careers</a></li>
+            <li><a href="#about">About Us</a></li>
             <li><a href="#contact">Contact</a></li>
-          </ul>
-        </div>
-        <div>
-          <div className="footer-col-title">Support</div>
-          <ul className="footer-links">
-            <li><a href="#">Help Center</a></li>
-            <li><a href="#">Status Page</a></li>
-            <li><a href="#">SLA Policy</a></li>
-            <li><a href="#pricing">Billing FAQ</a></li>
           </ul>
         </div>
       </div>

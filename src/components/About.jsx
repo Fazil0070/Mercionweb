@@ -85,8 +85,8 @@ export default function About() {
         </div>
         <div ref={addToRefs} className="reveal">
           <p className="section-desc about-desc">
-            Mercion was created with one goal: make powerful web hosting accessible to everyone. 
-            Whether you are shipping your first project or running a growing store, we have got your back 
+            Mercion was created with one goal: make powerful web hosting accessible to everyone.
+            Whether you are shipping your first project or running a growing store, we have got your back
             with transparent pricing and infrastructure that just works.
           </p>
         </div>
@@ -101,6 +101,57 @@ export default function About() {
             <div className="about-card-line"></div>
           </div>
         ))}
+      </div>
+
+      <div className="about-mission">
+        <div className="about-mission-header">
+          <div className="section-label">
+            <div className="section-label-line"></div>
+            <span className="section-label-text">// Our Mission</span>
+          </div>
+          <h2 className="section-title">
+            DEMOCRATIZING<br />
+            <span style={{ color: 'var(--red)' }}>PERFORMANCE.</span>
+          </h2>
+        </div>
+        <p className="about-mission-desc">
+          We believe every business deserves enterprise-grade hosting without the enterprise price tag. 
+          No hidden fees, no renewal shocks, no compromises. Just fast, reliable, and secure hosting 
+          that scales with your ambitions.
+        </p>
+      </div>
+
+      <div className="about-differentiators">
+        <div className="section-label">
+          <div className="section-label-line"></div>
+          <span className="section-label-text">// Why Mercion</span>
+        </div>
+        <h2 className="section-title">
+          WHAT SETS US<br />
+          <span style={{ color: 'var(--red)' }}>APART.</span>
+        </h2>
+        <div className="differentiators-grid">
+          <div className="differentiator-card">
+            <div className="differentiator-icon">⚡</div>
+            <h3 className="differentiator-title">No Renewal Shocks</h3>
+            <p className="differentiator-desc">Our renewal prices match what you pay. No 2x or 3x price hikes after the first year.</p>
+          </div>
+          <div className="differentiator-card">
+            <div className="differentiator-icon">🚀</div>
+            <h3 className="differentiator-title">NVMe + LiteSpeed</h3>
+            <p className="differentiator-desc">Cutting-edge storage and server technology for blazing-fast page loads.</p>
+          </div>
+          <div className="differentiator-card">
+            <div className="differentiator-icon">🇮🇳</div>
+            <h3 className="differentiator-title">Built for India</h3>
+            <p className="differentiator-desc">INR billing, Razorpay payments, and support that understands Indian businesses.</p>
+          </div>
+          <div className="differentiator-card">
+            <div className="differentiator-icon">🛡️</div>
+            <h3 className="differentiator-title">Enterprise Security</h3>
+            <p className="differentiator-desc">Free SSL, daily backups, malware protection, and advanced firewalls included.</p>
+          </div>
+        </div>
       </div>
     </section>
   );

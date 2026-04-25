@@ -71,12 +71,22 @@
   color: var(--white);
   border-bottom: 2px solid var(--red);
   position: relative;
+  padding-right: 16px;
 }
 .compare-table thead th.mercion-col::after {
   content: '★ OUR PICK';
-  position: absolute; top: 0; right: 12px;
-  font-family: var(--font-mono); font-size: 9px; font-weight: 600; letter-spacing: 1.5px;
-  color: #000; background: var(--red); padding: 4px 8px; border-radius: 0 0 4px 4px;
+  position: absolute;
+  top: 0;
+  right: 0;
+  font-family: var(--font-mono);
+  font-size: 9px;
+  font-weight: 600;
+  letter-spacing: 1.5px;
+  color: #000;
+  background: var(--red);
+  padding: 4px 8px;
+  border-radius: 0 0 4px 4px;
+  white-space: nowrap;
 }
 .compare-table tbody tr { transition: background 0.3s ease; }
 .compare-table tbody tr:hover td { background: rgba(255,255,255,0.02); }
@@ -120,11 +130,14 @@
 
 @media (max-width: 1100px) {
   .compare-table th, .compare-table td { padding: 16px; font-size: 13px; }
+  .compare-table thead th.mercion-col::after { font-size: 8px; padding: 3px 6px; }
 }
 @media (max-width: 900px) {
   .compare-table-wrap { overflow-x: auto; -webkit-overflow-scrolling: touch; }
   .compare-table { min-width: 900px; }
   .compare-table th, .compare-table td { padding: 14px; font-size: 13px; }
+  .compare-table thead th.mercion-col { padding-right: 12px; }
+  .compare-table thead th.mercion-col::after { font-size: 8px; padding: 3px 6px; }
   .compare-banner { flex-direction: column; align-items: flex-start; gap: 20px; padding: 28px; }
   .compare-pillars { gap: 16px; }
   .compare-pillar-text { font-size: 10px; }
@@ -134,6 +147,8 @@
 }
 @media (max-width: 600px) {
   .compare-table th, .compare-table td { padding: 12px; font-size: 12px; }
+  .compare-table thead th.mercion-col { padding-right: 10px; }
+  .compare-table thead th.mercion-col::after { font-size: 7px; padding: 2px 5px; }
   .compare-banner { padding: 24px 20px; }
   .compare-banner-text strong { font-size: 16px; }
   .compare-banner-text { font-size: 14px; }
@@ -144,6 +159,8 @@
 }
 @media (max-width: 480px) {
   .comparison { padding: 80px 16px; }
+  .compare-table thead th.mercion-col { padding-right: 8px; }
+  .compare-table thead th.mercion-col::after { font-size: 7px; padding: 2px 4px; }
   .compare-banner { padding: 20px 16px; }
   .compare-pillar { gap: 6px; }
   .compare-pillar-dot { width: 6px; height: 6px; }

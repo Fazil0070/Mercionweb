@@ -117,8 +117,114 @@
   width: 100%;
 }
 
+/* Mission Section */
+.about-mission {
+  margin-top: 120px;
+  margin-bottom: 120px;
+  max-width: 1000px;
+  margin-left: auto;
+  margin-right: auto;
+  text-align: center;
+  position: relative;
+  z-index: 2;
+}
+
+.about-mission-header {
+  margin-bottom: 40px;
+}
+
+.about-mission-desc {
+  font-size: 18px;
+  line-height: 1.8;
+  color: var(--text-secondary);
+  max-width: 700px;
+  margin: 0 auto;
+}
+
+/* Differentiators Section */
+.about-differentiators {
+  margin-top: 120px;
+  max-width: 1400px;
+  margin-left: auto;
+  margin-right: auto;
+  position: relative;
+  z-index: 2;
+}
+
+.about-differentiators .section-label {
+  justify-content: center;
+  margin-bottom: 24px;
+}
+
+.about-differentiators .section-title {
+  text-align: center;
+  margin-bottom: 64px;
+}
+
+.differentiators-grid {
+  display: grid;
+  grid-template-columns: repeat(4, 1fr);
+  gap: 24px;
+}
+
+.differentiator-card {
+  background: var(--card);
+  border: 1px solid var(--border);
+  padding: 40px 32px;
+  transition: all 0.4s cubic-bezier(0.16, 1, 0.3, 1);
+  position: relative;
+  overflow: hidden;
+}
+
+.differentiator-card::before {
+  content: '';
+  position: absolute;
+  top: 0;
+  left: 0;
+  right: 0;
+  height: 2px;
+  background: linear-gradient(90deg, transparent, var(--red), transparent);
+  opacity: 0;
+  transition: opacity 0.4s ease;
+}
+
+.differentiator-card:hover {
+  border-color: var(--border2);
+  transform: translateY(-6px);
+  background: var(--card2);
+  box-shadow: 0 20px 60px rgba(0, 0, 0, 0.4);
+}
+
+.differentiator-card:hover::before {
+  opacity: 1;
+}
+
+.differentiator-icon {
+  font-size: 40px;
+  margin-bottom: 24px;
+  display: block;
+}
+
+.differentiator-title {
+  font-family: var(--font-heading);
+  font-size: 18px;
+  font-weight: 600;
+  color: var(--white);
+  margin-bottom: 12px;
+  letter-spacing: 0.5px;
+}
+
+.differentiator-desc {
+  font-size: 14px;
+  line-height: 1.7;
+  color: var(--text-secondary);
+}
+
 @media (max-width: 1100px) {
   .about-grid {
+    grid-template-columns: repeat(2, 1fr);
+  }
+  .differentiators-grid {
     grid-template-columns: repeat(2, 1fr);
   }
 }
@@ -132,14 +238,49 @@
   .about-desc {
     margin-left: 0;
   }
+
+  .about-mission {
+    margin-top: 80px;
+    margin-bottom: 80px;
+  }
+
+  .about-mission-desc {
+    font-size: 16px;
+  }
+
+  .about-differentiators {
+    margin-top: 80px;
+  }
 }
 
 @media (max-width: 600px) {
   .about-grid {
     grid-template-columns: 1fr;
   }
+  .differentiators-grid {
+    grid-template-columns: 1fr;
+  }
   .about {
     padding: 80px 20px;
+  }
+  .about-mission {
+    margin-top: 60px;
+    margin-bottom: 60px;
+  }
+  .about-mission-desc {
+    font-size: 15px;
+  }
+  .differentiator-card {
+    padding: 32px 24px;
+  }
+  .differentiator-icon {
+    font-size: 36px;
+  }
+  .differentiator-title {
+    font-size: 16px;
+  }
+  .differentiator-desc {
+    font-size: 13px;
   }
 }
 
@@ -155,5 +296,24 @@
   }
   .about-card-desc {
     font-size: 13px;
+  }
+  .about-mission {
+    margin-top: 48px;
+    margin-bottom: 48px;
+  }
+  .about-mission-desc {
+    font-size: 14px;
+  }
+  .differentiator-card {
+    padding: 28px 20px;
+  }
+  .differentiator-icon {
+    font-size: 32px;
+  }
+  .differentiator-title {
+    font-size: 15px;
+  }
+  .differentiator-desc {
+    font-size: 12px;
   }
 }
