@@ -5,6 +5,7 @@ import Hero from './components/Hero';
 import Ticker from './components/Ticker';
 import About from './components/About';
 import Process from './components/Process';
+import ServerDiagram from './components/ServerDiagram';
 import Features from './components/Features';
 import Pricing from './components/Pricing';
 import Comparison from './components/Comparison';
@@ -23,6 +24,7 @@ function Home() {
       <Ticker />
       <About />
       <Process />
+      <ServerDiagram />
       <Features />
       <Pricing />
       <Comparison />
